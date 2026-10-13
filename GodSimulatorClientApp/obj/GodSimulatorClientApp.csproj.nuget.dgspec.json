@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj": {}
+    "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\Новая папка\\WEB Practice 2\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj": {
+    "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\Новая папка\\WEB Practice 2\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj",
+        "projectUniqueName": "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\Новая папка\\WEB Practice 2\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj",
         "projectName": "GodSimulatorClientApp",
-        "projectPath": "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj",
+        "projectPath": "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\Новая папка\\WEB Practice 2\\GodSimulatorClientApp\\GodSimulatorClientApp.csproj",
         "packagesPath": "C:\\Users\\gorod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\GodSimulatorClientApp\\obj\\",
+        "outputPath": "C:\\Users\\gorod\\OneDrive\\Рабочий стол\\Гурин WEB-разработка\\Новая папка\\WEB Practice 2\\GodSimulatorClientApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
