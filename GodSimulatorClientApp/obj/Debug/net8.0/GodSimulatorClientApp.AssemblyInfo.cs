@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GodSimulatorClientApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4029be42ef6bc4bb2f59d083c96c7a6b57f88386")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6782c61ab61993e5c14ce4861a8423be802471e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GodSimulatorClientApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GodSimulatorClientApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
