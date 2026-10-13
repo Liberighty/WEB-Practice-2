@@ -1,0 +1,8 @@
+@GodSimulatorAPI_HostAddress = http://localhost:5288
+
+GET {{GodSimulatorAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+# Кстати забыл спросить у преподавателя - а это чё??

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Добавить обновление";
+}
+
+<h2 class="h2">Чем будем развлекать людей?</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="eventname" class="form-label">Название события</label>
+        <input type="text" name="eventname" class="form-control" id="eventname">
+    </div>
+    <div class="mb-3">
+        <label for="eventdescription" class="form-label">Описание события</label>
+        <textarea type="text" name="eventdescription" class="form-control" id="eventdescription" rows="7"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="EventBeginning" class="form-label">Дата начала события</label>
+        <input name="EventBeginning" class="form-control" id="EventBeginning">
+    </div>
+    <div class="mb-3">
+        <label for="EventDuration" class="form-label">Длительность события</label>
+        <input name="EventDuration" class="form-control" id="EventDuration">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Запустить</button>
+    <a href="/events/action" class="btn btn-danger">Отмена</a>
+</form>

@@ -1,0 +1,76 @@
+﻿@model List<GodSimulatorClientApp.Data.Update>
+
+@{
+    ViewData["Title"] = "Модерация обновлений";
+}
+<div class="mb-3">
+<h4>Список обновлений симуляции</h4>
+<a href="/home/add"><button class="btn btn-primary">Новое обновление</button></a>
+</div>
+<h4>Поиск по обновлениям</h4>
+
+<form method="post" asp-controller="Home" asp-action="Search"
+  class="row row-cols-lg-auto g-3 align-items-center mt-1">
+<div class="col-12">
+    <input type="text" name="Version" class="form-control" id="exampleInputPassword1" placeholder="Поиск по версии">
+</div>
+<div>
+    <input type="text" name="Description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Поиск по описанию">
+</div>
+
+    <button type="submit" class="btn btn-primary">Поиск</button>
+</form>
+
+<div class="row">
+     <div class="col-8">
+<table class="table">
+    <tr>
+        <th>Патч</th>
+        <th style="width: 50%;">Описание</th>
+        <th>Действия</th>
+        <th style="width: 5%;">Оценка общества</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Version</td>
+            <td style="white-space: pre-wrap; word-break: break-word;">@item.Description</td>
+            <td>
+                <a href="/home/Edit/@item.Id">Редактировать</a>
+                <a href="/home/Remove/@item.Id">Удалить</a>
+            </td>
+            <td>@item.SocietyOpinion</td>
+        </tr>
+    }
+
+</table>
+
+</div>
+    <div class="col-4">
+        <h4>Сообщения "пользователей"</h4>
+        <div id="feed" class="feed-container"></div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const feed = document.getElementById('feed');
+
+        async function fetchMessage() {
+            const response = await fetch('/home/InternetInsanity');
+            const data = await response.json();
+
+            const div = document.createElement('div');
+            div.className = 'feed-item';
+            div.textContent = data.post; 
+
+            feed.prepend(div);
+
+            while (feed.children.length > 20) {
+                feed.removeChild(feed.lastChild);
+            }
+        }
+
+        setInterval(fetchMessage, 1000);
+    </script> 
+}

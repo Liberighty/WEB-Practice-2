@@ -1,0 +1,50 @@
+﻿@model List<GodSimulatorClientApp.Data.WorldEvent>
+
+@{
+    ViewData["Title"] = "Модерация событий";
+}
+<div class="mb-3">
+<h4>Список глобальных событий</h4>
+<a href="/events/add"><button class="btn btn-primary">Новое обновление</button></a>
+</div>
+<h4>Поиск по событиям</h4>
+
+<form method="post" asp-controller="Events" asp-action="Search"
+  class="row row-cols-lg-auto g-3 align-items-center mt-1">
+<div class="col-12">
+        <input type="text" name="name" class="form-control" id="exampleInputPassword1" placeholder="Поиск названию">
+</div>
+<div>
+        <input type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Поиск по описанию">
+</div>
+
+    <button type="submit" class="btn btn-primary">Поиск</button>
+</form>
+
+<div class="row">
+     <div class="col-12">
+<table class="table">
+    <tr>
+        <th>Название</th>
+        <th style="width: 50%;">Описание</th>
+        <th>Действия</th>
+        <th style="width: 5%;">Дата начала</th>
+        <th style="width: 5%;">Длительность</th>
+        <th style="width: 5%;">Дата окончания</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.EventName</td>
+            <td style="white-space: pre-wrap; word-break: break-word;">@item.EventDescription</td>
+            <td>
+                <a href="/Events/Edit/@item.Id">Редактировать</a>
+                <a href="/Events/Remove/@item.Id">Удалить</a>
+            </td>
+            <td>@item.EventBeginning</td>
+            <td>@item.EventDuration</td>
+            <td>@item.EventEnding</td>
+        </tr>
+    }
+
+</table>

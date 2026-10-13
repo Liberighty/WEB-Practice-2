@@ -1,0 +1,30 @@
+﻿@model GodSimulatorClientApp.Data.WorldEvent
+
+@{
+    ViewData["Title"] = "Редактирование";
+}
+
+<h2 class="h2">Изменение события</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="eventname" class="form-label">Название события</label>
+        <input type="text" name="eventname" class="form-control" id="eventname" value="@Model?.EventName" required>
+    </div>
+    <div class="mb-3">
+        <label for="eventdescription" class="form-label">Описание</label>
+        <textarea name="eventdescription" class="form-control" id="eventdescription" rows="5" required>@Model?.EventDescription</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="EventBeginning" class="form-label">Дата начала события</label>
+        <textarea name="EventBeginning" class="form-control" id="EventBeginning" rows="1" required>@Model?.EventBeginning</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="EventDuration" class="form-label">Дата начала события</label>
+        <textarea name="EventDuration" class="form-control" id="EventDuration" rows="1" required>@Model?.EventDuration</textarea>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>
